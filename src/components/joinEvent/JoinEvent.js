@@ -10,7 +10,7 @@ export default function JoinEvent() {
   const userLocalStorage = localStorage.getItem("userScore");
   const getAllEvents = () => {
     // fetch(`http://localhost:5000/event/all_events`, {
-    fetch(`https://keet-it-clean.herokuapp.com/all_events`, {
+    fetch(`https://keet-it-clean.herokuapp.com/event/all_events`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

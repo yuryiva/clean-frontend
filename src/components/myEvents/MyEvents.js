@@ -28,7 +28,8 @@ const MyEvents = () => {
   const [state, setState] = useState(initialState);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/event/my_events`, {
+    // fetch(`http://localhost:5000/event/my_events`, {
+    fetch(`https://keet-it-clean.herokuapp.com/event/my_events`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
