@@ -8,7 +8,8 @@ const ContextProvider = ({ children }) => {
   const [allEvents, setAllEvents] = useState("");
 
   const getUser = () => {
-    fetch(`http://localhost:5000/auth`, {
+    // fetch(`http://localhost:5000/auth`, {
+    fetch(`https://keet-it-clean.herokuapp.com/auth`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +22,8 @@ const ContextProvider = ({ children }) => {
       });
   };
   const getAllUsers = () => {
-    fetch(`http://localhost:5000/auth/all_users`, {
+    // fetch(`http://localhost:5000/auth/all_users`, {
+    fetch(`https://keet-it-clean.herokuapp.com/auth/all_users`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +36,8 @@ const ContextProvider = ({ children }) => {
   };
 
   const getAllEvents = () => {
-    fetch(`http://localhost:5000/event/all_events`, {
+    // fetch(`http://localhost:5000/event/all_events`, {
+    fetch(`https://keet-it-clean.herokuapp.com/event/all_events`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
