@@ -22,13 +22,14 @@ const MapBox = (props) => {
   const [myMap, setMap] = useState("");
 
   useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/light-v10", //'mapbox://styles/mapbox/streets-v11',
-      center: [-0.118092, 51.509865],
-      zoom: 11.4,
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiZ2FicmllbGppIiwiYSI6ImNraWcxcHFiNDA3Y3cycHFqdWdudDRvODYifQ.FbnpQq5I7Ft7PaKVW0WSzg";
+    var map = new mapboxgl.Map({
+      container: "map", // container ID
+      style: "mapbox://styles/mapbox/streets-v11", // style URL
+      center: [-74.5, 40], // starting position [lng, lat]
+      zoom: 9, // starting zoom
     });
-
     setMap(map);
 
     map.on("load", function () {
