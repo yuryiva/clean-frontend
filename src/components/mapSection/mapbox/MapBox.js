@@ -3,7 +3,8 @@ import styled from "styled-components";
 import mapboxgl from "mapbox-gl";
 import { stores } from "./helper/fakeData";
 
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+// mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FicmllbGppIiwiYSI6ImNraWcxcHFiNDA3Y3cycHFqdWdudDRvODYifQ.FbnpQq5I7Ft7PaKVW0WSzg'
 
 const StyledMapContainer = styled.div`
   width: 80vw;
