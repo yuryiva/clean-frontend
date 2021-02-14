@@ -29,7 +29,7 @@ const MyEvents = () => {
 
   useEffect(() => {
     // fetch(`http://localhost:5000/event/my_events`, {
-    fetch(`https://keet-it-clean2.herokuapp.com/event/my_events`, {
+    fetch(`https://keep-it-clean2.herokuapp.com/event/my_events`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
