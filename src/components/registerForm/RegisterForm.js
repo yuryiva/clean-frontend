@@ -26,7 +26,7 @@ const RegisterForm = () => {
   const sendDataToBackend = async () => {
     console.log(details);
     // fetch("http://localhost:5000/register", {
-    fetch("https://keet-it-clean.herokuapp.com/register", {
+    fetch("https://keet-it-clean2.herokuapp.com/register", {
       method: "POST",
       headers: new Headers({
         "Content-Type": "application/json",

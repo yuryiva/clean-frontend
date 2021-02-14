@@ -21,7 +21,7 @@ const LogInForm = () => {
     console.log(details);
 
     // fetch("http://localhost:5000/auth", {
-    fetch("https://keet-it-clean.herokuapp.com/auth", {
+    fetch("https://keet-it-clean2.herokuapp.com/auth", {
       method: "POST",
       headers: new Headers({
         "Content-Type": "application/json",

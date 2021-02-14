@@ -34,7 +34,7 @@ const EventForm = () => {
     console.log(details);
     fetch(
       // `http://localhost:5000/event`,
-      `https://keet-it-clean.herokuapp.com/event`,
+      `https://keet-it-clean2.herokuapp.com/event`,
 
       {
         method: "POST",
